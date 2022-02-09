@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Tags №2</title>
+		<meta charset="utf-8"/>		<!-- кодування сторінки -->
+	</head>
+	<body>
+		<!--<h1>,...<h6> - блочні теги-->
+		<h1>h1 block</h1>	<!--тільки 1 раз -->
+		<h2>h2 block</h2>
+		<h3>h3 block</h3>
+		<h4>h4 block</h4>
+		<h5>h5 block</h5>
+		<h6>h6 block</h6>
+
+		<!--<p> - блочний теги-->
+		<p>First = Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		<p>Second = Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
+
+		<!--<span> - строковий тег-->
+		<span>spanOne = Lorem ipsum dolor, sit amet.</span>
+		<span>spanTwo = Lorem ipsum dolor, sit amet.</span>
+
+		<!--Блочний теги - займає всю ширину екрану незалежно від того, скільки в ньому інформації
+			Строковий тег - займає місце від того, скільки в ньому інформації-->
+
+		<!--<a> - посилання
+			target="..." - де саме відкриється вікно
+			href="..." - посилання на певну сторінку
+			download="..." - скачує певний файл; використовується разом з href-->
+		<p>
+			<a target="_blank" href="https://www.google.com">Link on google.com (нова вкладка)</a>
+		</p>
+		<p>
+			<a target="_parent" href="https://www.google.com">Link on google.com (замість цієї вкладки)</a>
+		</p>
+
+		<!--<img/> - строковий тег для зображень
+			src="..." - звідки саме завантажую
+			alt="..." - у випадку не завантаження зображення-->
+		<img src="img/example_wallpaper.png" alt="No image :("/>
+
+		<!--<ul> - список з маркерами на початку (unordered list)
+			<ol> - список з номерами на початку (ordered list)
+			<li> - перелік елементів у списку (list item)
+				усі вони - блочні теги-->
+		<ul>Languages :
+			<li><a target="_blank" href="https://uk.wikipedia.org/wiki/C%2B%2B">C++</a></li>
+			<li><a target="_blank" href="https://uk.wikipedia.org/wiki/Java">Java</a></li>
+		</ul>
+
+		<ol>Cars :
+			<li><a target="_blank" href="https://www.mercedes-benz.ua/passengercars.html?group=all&subgroup=see-all&view=BODYTYPE">Mercedes</a></li>
+			<li><a target="_blank" href="https://www.bmw.ua/uk/index.html">BMW</a></li>
+		</ol>
+
+		<!--<br/> - для переводу на наступну стрічку-->
+		<p>Lorem ipsum <br/>dolor sit amet.</p>
+	</body>
+</html>
