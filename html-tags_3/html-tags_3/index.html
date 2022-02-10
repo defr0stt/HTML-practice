@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Tags №3</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+
+		<!--<form> = створює форму
+			атребути :  action - адреса для відправлення даних
+						method - вид передачі інформації (get - мала к-сть, видна користувачу, post - велика к-сть, не видна користувачу)
+						enctype - спосіб кодування форми, сумісний тільки з method="post"
+							("multipart/form-data") - для відправлення медіа даних-->
+		<form action="#" method="post" enctype="multipart/form-data">
+			
+			<!--<input> = для вводу даних
+				атрибути : placeholder - в полі пишиться, що туди вводити-->
+			<div>
+				<input placeholder="Enter username" type="text" name="username" value=""/>
+			</div>
+			<div>
+				<!--disabled - поле не доступне для вводу-->
+				<input disabled placeholder="Enter password" type="password" name="user_pass" value=""/>
+				</div>
+			<div>
+				<p>
+					<input type="radio" name="user_beer" value="lager"/>Светлое пиво
+				</p>
+				<p>
+					<!--checked - по дефолту вибирається на початку-->
+					<input checked type="radio" name="user_beer" value="dark"/>Тёмное пиво
+				</p>
+				<p>
+					<input type="button" name="user_button" value=""/>
+				</p>
+			</div>
+			<div>
+				<p>
+					<input type="checkbox" name="car1" value="yes"/>BMW
+					<br/>
+					<input type="checkbox" name="car2" value="yes"/>Mercedes
+				</p>
+			</div>
+			<div>
+				<p>
+					<!--type="file" - вибір певного файлу з диску-->
+					<input type="file" name="photo" />
+				</p>
+			</div>
+			<div>
+				<!--textarea = text, але більше
+					cols, rows = розміри цього поля(не завжди задаються так, як йдуть інші налаштування в css та js)-->
+				<textarea name="text" cols="30" rows="5"></textarea>
+			</div>
+			<br/>
+			<div>
+				<!--<select> - список
+					<option> - елемент у списку
+						атрибути : selected - вибраний по дефолту-->
+				<select name="">
+					<option value="red">Red</option>
+					<option value="green">Green</option>
+					<option selected value="blue">Blue</option>
+				</select>
+			</div>
+			<br/>
+			<div>
+				<!--<button> = кнопка
+					атребути : type - тип кнопки(submit - відправити форму, reset - очистити формуч)-->
+				<button type="submit">
+					Відправити
+				</button>
+			</div>
+		</form>
+	</body>
+</html>

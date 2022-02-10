@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Example form</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<!--Усі елементи взаємодії включати в div-->
+		<!--tabindex - при нажиманні tab - вказує який елемент буде йти за яким-->
+		<form action="#" method="get">
+			<div>
+				<label for="username">Name</label>
+				<input placeholder="Enter name" tabindex="1" type="text" id="username" name="username">
+				<br/>
+			</div>
+			<div>
+				<label for="user_pass">Password</label>
+				<input placeholder="Enter password" tabindex="2" type="text" id="user_pass" name="user_pass">
+				<br/>
+			</div>
+			<div>
+				<label for="user_tel">Telephone</label>
+				<input placeholder="Enter telephone" tabindex="3" type="tel" id="user_tel" name="user_tel">
+				<br/>
+				<br/>
+			</div>
+
+			<div>
+				<h4>Gender</h4>
+				<div>
+					<p>
+					<input checked type="radio" tabindex="4" name="gender" value="male"/>Male
+					</p>
+				</div>
+				<div>
+					<p>
+					<input type="radio" name="gender" tabindex="4" value="female"/>Female
+					</p>
+				</div>
+			</div>
+			<br/>
+
+			<div>
+				<h4>Property</h4><p></p>
+					<div>
+						<input type="checkbox" tabindex="5" name="car" value="yes">Car<br/>
+					</div>
+					<div>
+						<input checked type="checkbox" tabindex="6" name="bicycle" value="yes">Bicycle<br/>
+					</div>
+					<div>
+						<input disabled type="checkbox" tabindex="7" name="house" value="yes">House<br/>
+					</div>
+			</div>
+			<br/>
+
+			<div>
+				<h4>Additional info</h4><p></p>
+				<textarea tabindex="8" name="text"></textarea>
+			</div>
+
+			<div>
+				<h4>Add photo</h4><p></p>
+				<input type="file" tabindex="9" name="photo">
+			</div>
+			<br/>
+
+			<div>
+				<h4>Favourite colour</h4>
+				<select tabindex="10" name="colour_list">
+					<option value="red">RED</option>
+					<option value="green">GREEN</option>
+					<option value="blue">BLUE</option>
+				</select>
+			</div>
+			<br/>
+
+			<div>
+				<h4>Sending form</h4>
+				<button tabindex="11" type="submit">Send</button>
+				<button tabindex="12" type="reset">Reset</button>
+			</div>
+		</form>
+	</body>
+</html>
