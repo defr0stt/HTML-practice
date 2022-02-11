@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CSS №1</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div>
+			<p class="smallBlue">
+				Lorem ipsum <span class="smallBlue">dolor sit</span> amet consectetur, <span class="smallBlue">adipisicing elit.</span>
+			</p>
+			<p>
+				Lorem <span>ipsum dolor sit</span> amet <span class="smallBlue">consectetur.</span>
+			</p>
+			<div>
+				<!--так, як .smallBlue>span вказано для першого рівня, то тут буде застосовуватись просто .smallBlue-->
+				<br/>
+				<span class="smallBlue">Lorem ipsum, dolor sit amet.</span>
+			</div>
+		</div>
+	</body>
+</html>
