@@ -1,0 +1,100 @@
+/*-----------------------------------------*/
+*{
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*-----------------------------------------*/
+
+/*внутр.відступ: зверху, справа, знизу, зліва*/
+/*border - границі блоку*/
+.exampleBlockPadding{
+	padding: 30px 20px 30px 5px;
+	border: 1px solid #000;
+}
+
+.exampleBlockMargin{
+	margin: 30px 20px 30px 5px;
+	border: 1px solid #000;
+}
+
+/*width - фіксована довжина блоку*/
+.exampleBlockWidthHeight{
+	width: 150px;
+	height: 200px;
+	border: 1px solid #000;
+}
+
+/*мінімальна і максимальна ширина блоку*/
+.exampleBlockMinMaxWidth{
+	min-width: 150px;
+	max-width: 500px;
+	border: 1px solid #000;
+}
+
+/*збільшення каритнки до певних розмірів*/
+.exampleImageMinMaxWidth{
+	width: 70%;
+	max-width: 500px;
+}
+
+/*overflow - те, як буде відображатись інформація
+		visible - те, що віиходить за рамки - видно
+		hidden - те, що віиходить за рамки - не видно
+		scroll - те, що віиходить за рамки можна прогортати
+		auto = scroll, але додає тільки потрібні скроли*/
+.exampleBlockOverflow{
+	overflow: auto;
+	max-width: 100px;
+	max-height: 100px;
+	border: 1px solid #000;
+}
+
+/*display - те, як буде відобр. елемент
+	block - відображення елемнту як блочного(може перетворити строковий->блочний)
+	inline = block, але навпаки переводить до строки
+	inline-block - гібрид між ними
+	none - елемент тимчасово приховується, сторінка формується без нього*/
+.exampleBlockDisplay{
+	display: block;
+	padding: 30px 20px 30px 5px;
+	max-width: 400px;
+	border: 1px solid #000;
+}
+
+.exampleBlockDisplayNone{
+	display: none;
+	border: 1px solid #000;
+}
