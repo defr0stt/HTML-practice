@@ -1,0 +1,167 @@
+/*-----------------------------------------*/
+*{
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*-----------------------------------------*/
+
+body{
+	padding: 30px;
+	background: url('../img/4.png') 0 0 no-repeat fixed;
+}
+
+.blockColor{
+	padding: 60px 40px 0 30px;
+	font-size: 30px;
+	height: 200px;
+	width: 200px;
+	border-radius: 15px;
+	background-color: #abd;
+	box-shadow: 0 0 15px #000;
+}
+
+.blockVisibility{
+	padding: 40px 40px 0 30px;
+	margin: -200px 0 0 250px ;
+	color: #fff;
+	font-size: 30px;
+	height: 200px;
+	width: 200px;
+	border-radius: 15px;
+	/*background-color - можу задати просто через rgb*/
+	background-color: rgba(12, 15, 100, 0.4);
+	box-shadow: 0 0 15px #000;
+}
+
+.blockImage{
+	padding: 40px 40px 0 30px;
+	margin: -200px 0 0 500px ;
+	color: #fff;
+	font-size: 30px;
+	height: 200px;
+	width: 200px;
+	border-radius: 15px;
+	/*background-image - важливо, щоб картинка займала не багато місця
+			no-repeat - без повтору(якщо картинка невелика
+			repeat(x/y) - повтор по горизонталі чи вертикалі)*/
+	background-image: url('../img/1.jpg');
+	box-shadow: 0 0 15px #000;
+}
+
+.blockImagePosition{
+	padding: 40px 40px 0 30px;
+	margin: -200px 0 0 750px ;
+	color: #f00;
+	font-size: 30px;
+	height: 200px;
+	width: 200px;
+	border-radius: 15px;
+	/*background - можна задавати саме координати в:
+		px, %, (center, right bottom)
+	окремо задати позицію можна за допомогою background-position*/
+	background: url('../img/1.jpg') right top no-repeat;
+	box-shadow: 0 0 15px #000;
+}
+
+.blockImageAttachment{
+	padding: 40px 40px 0 30px;
+	margin: 50px 0 0 0;
+	color: #fff;
+	font-size: 30px;
+	height: 200px;
+	width: 200px;
+	border-radius: 15px;
+	/*background-attachment - відповідає за прокрутку забраження
+		можна задавати окремо, а можна у background*/
+	background: url('../img/2.png') -600px -100px no-repeat fixed;
+	box-shadow: 0 0 15px #000;
+}
+
+.blockImageSize{
+	padding: 40px 40px 0 30px;
+	margin: -200px 0 0 250px;
+	color: #f00;
+	font-size: 30px;
+	height: 200px;
+	width: 200px;
+	border-radius: 15px;
+	/*background-size - відповідає за розмір забраження
+		можна задавати окремо, а можна у background(%, px, (contain,...))
+		contain - масштабується по меншій стороні
+		cover - масштабується по більшій стороні*/
+	background: url('../img/8.jpg') 0 0/100% 100% no-repeat;
+	box-shadow: 0 0 15px #000;
+}
+
+.blockImageSizeCover{
+	padding: 40px 40px 0 30px;
+	margin: -200px 0 0 500px;
+	font-size: 30px;
+	color: #fff;
+	height: 200px;
+	border-radius: 15px;
+	/*картинка намагається бути по центру*/
+	background: url('../img/2.png') 50%/cover no-repeat;
+	box-shadow: 0 0 15px #000;
+}
+
+.blockSomeImages{
+	padding: 40px 40px 0 30px;
+	margin: -450px 0 0 1000px;
+	font-size: 30px;
+	color: #fff;
+	height: 200px;
+	border-radius: 15px;
+	/*декілька картинок просто перелічуються*/
+	background: url('../img/8.jpg') right bottom/contain no-repeat, url('../img/2.png') 0 0/contain no-repeat;
+	box-shadow: 0 0 15px #000;
+}
+
+.blockSimple{
+	padding: 20px 0 0 30px;
+	margin: 300px 0 0 0;
+	font-size: 30px;
+	height: 200px;
+	width: 200px;
+	border-radius: 15px;
+	background-color: #abd;
+	box-shadow: 0 0 15px #000;
+}
+
+.list li{
+	padding: 0 0 0 30px;
+	background: url('../img/8.jpg') 0 10px/15px 15px no-repeat;
+}
